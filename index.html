@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+An Dc Group initiate....
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <section class="navHeader">
+      <div class="navSection">
+        <div class="hamburger">
+          <div class="bar topLine"></div>
+          <div class="bar btmLine"></div>
+        </div>
+      </div>
+      <div class="menuTabs">
+        <li class="menuLinks"><a href="">home</a></li>
+        <li class="menuLinks"><a href="">products</a></li>
+        <li class="menuLinks"><a href="">services</a></li>
+        <li class="menuLinks"><a href="">data</a></li>
+        <li class="menuLinks"><a href="">meta</a></li>
+        <li class="menuLinks"><a href="">feta</a></li>
+      </div>
+    </section>
+    <script>
+      (function () {
+        var burger = document.querySelector('.hamburger'),
+          Navbar = document.querySelector('.navHeader');
+
+        burger.onclick = function () {
+          Navbar.classList.toggle('menu-opened');
+        };
+      })();
+    </script>
+  </body>
+</html>
